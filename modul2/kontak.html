@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulir Kontak</title>
+    <title>Formulir Kontak - Portofolio Saya</title>
 </head>
 <body>
+
+    <!-- Bagian Header -->
     <header>
         <h1>Formulir Kontak</h1>
 
         <nav>
             <ul>
                 <li><a href="index.html">Beranda</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="project.html">Proyek</a></li>
                 <li><a href="kontak.html">Hubungi Saya</a></li>
             </ul>
         </nav>
@@ -21,32 +25,69 @@
     <hr>
 
     <main>
-        <section>
+
+        <!-- Bagian Informasi Kontak -->
+        <section id="informasi-kontak">
+            <h2>Hubungi Saya</h2>
+
+            <p>
+                Halo! Saya Andieni Della Agustin.
+                Terima kasih telah mengunjungi
+                website portofolio saya.
+            </p>
+
+            <p>
+                Saya terbuka untuk belajar,
+                berdiskusi, dan berkolaborasi
+                dalam bidang pengembangan web.
+            </p>
+
+            <p>
+                Jika ingin menghubungi saya,
+                silakan mengisi formulir
+                kontak yang tersedia di bawah ini.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Bagian Formulir Kontak -->
+        <section id="formulir-kontak">
             <h2>Kirimkan Pesan</h2>
 
-            <form>
+            <form action="#" method="get">
+
+                <!-- Input Nama Lengkap -->
                 <p>
                     <label for="nama_pengirim">
-                        Nama Lengkap: 
+                        Nama Lengkap:
                     </label><br>
+
                     <input
                         type="text"
                         id="nama_pengirim"
                         name="nama_pengirim"
+                        placeholder="Masukkan nama lengkap"
+                        required
                     >
                 </p>
 
+                <!-- Input Alamat Email -->
                 <p>
                     <label for="email_pengirim">
-                        Alamat Email: 
+                        Alamat Email:
                     </label><br>
+
                     <input
                         type="email"
                         id="email_pengirim"
                         name="email_pengirim"
+                        placeholder="Masukkan alamat email"
+                        required
                     >
                 </p>
 
+                <!-- Pilihan Jenis Layanan -->
                 <p>
                     <label for="jenis_layanan">
                         Layanan yang Dibutuhkan:
@@ -55,36 +96,125 @@
                     <select
                         id="jenis_layanan"
                         name="jenis_layanan"
+                        required
                     >
-                        <option value="">-- Pilih Layanan --</option>
-                        <option value="web">Pembuatan Web</option>
-                        <option value="app">Pengembangan Aplikasi</option>
-                        <option value="other">Lain-lain</option>
+                        <option value="">
+                            -- Pilih Layanan --
+                        </option>
+
+                        <option value="web">
+                            Pembuatan Web
+                        </option>
+
+                        <option value="app">
+                            Pengembangan Aplikasi
+                        </option>
+
+                        <option value="kolaborasi">
+                            Kolaborasi Proyek
+                        </option>
+
+                        <option value="other">
+                            Lain-lain
+                        </option>
                     </select>
                 </p>
 
+                <!-- Input Pesan -->
                 <p>
-                    <label for="pesan">Pesan:</label><br>
+                    <label for="pesan">
+                        Pesan:
+                    </label><br>
+
                     <textarea
                         id="pesan"
                         name="pesan"
                         rows="6"
                         cols="40"
+                        placeholder="Tuliskan pesan Anda di sini..."
+                        required
                     ></textarea>
                 </p>
 
+                <!-- Tombol Formulir -->
                 <p>
-                    <button type="submit">Kirim Pesan</button>
-                    <button type="reset">Batal / Reset</button>
+                    <button type="submit">
+                        Kirim Pesan
+                    </button>
+
+                    <button type="reset">
+                        Batal / Reset
+                    </button>
                 </p>
+
             </form>
         </section>
+
+        <hr>
+
+        <!-- Bagian Informasi Tambahan -->
+        <section id="informasi-tambahan">
+            <h2>Informasi Tambahan</h2>
+
+            <p>
+                Saya sedang mengembangkan
+                keterampilan dalam bidang
+                HTML, CSS, JavaScript,
+                dan pengelolaan database.
+            </p>
+
+            <p>
+                Anda juga dapat melihat
+                informasi mengenai profil,
+                pendidikan, dan keterampilan
+                saya melalui halaman resume.
+            </p>
+
+            <p>
+                <a href="resume.html">
+                    Lihat Resume Saya
+                </a>
+            </p>
+
+            <p>
+                Untuk melihat proyek yang
+                sedang saya pelajari,
+                silakan kunjungi halaman proyek.
+            </p>
+
+            <p>
+                <a href="project.html">
+                    Lihat Proyek Saya
+                </a>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Navigasi Kembali -->
+        <section id="kembali">
+            <h2>Kembali ke Beranda</h2>
+
+            <p>
+                Terima kasih telah mengunjungi
+                website portofolio saya.
+            </p>
+
+            <p>
+                <a href="index.html">
+                    Kembali ke Halaman Beranda
+                </a>
+            </p>
+        </section>
+
     </main>
 
     <hr>
 
+    <!-- Bagian Footer -->
     <footer>
         <p>&copy; 2026 Portofolio Mahasiswa</p>
     </footer>
+
 </body>
 </html>
